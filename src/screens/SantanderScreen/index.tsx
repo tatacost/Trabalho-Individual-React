@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
 import { styles } from "../SantanderScreen/styles";
-import Santanderlogo from ".../../../../TrabalhoIndividualRN/src/assets/SantanderLogo.png";
+import Santanderlogo from "../../assets/SantanderLogo.png";
 
 
 export const Santander = () => {

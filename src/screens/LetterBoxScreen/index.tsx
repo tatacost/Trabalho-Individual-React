@@ -3,18 +3,18 @@ import { View, Text, Image, TouchableOpacity, TextInput, FlatList } from 'react-
 import { styles } from './styles';
 
 const FILMS = [
-  { id: 1, image: require('./assets/liloStitch.png') },
-  { id: 2, image: require('./assets/mickey17.png') },
-  { id: 3, image: require('./assets/interstellar.png') },
-  { id: 4, image: require('./assets/materialist.png') },
-  { id: 5, image: require('./assets/sinners.png') },
-  { id: 6, image: require('./assets/darkNight.png') },
-  { id: 7, image: require('./assets/homemComH.png') },
-  { id: 8, image: require('./assets/inception.png') },
-  { id: 9, image: require('./assets/RitaLee.png') },
-  { id: 10, image: require('./assets/UltimaGota.png') },
-  { id: 11, image: require('./assets/kpopHunters.png') },
-  { id: 12, image: require('./assets/untilDawn.png') },
+  { id: 1, image: require('../../assets/filmes/liloStitch.png') },
+  { id: 2, image: require('../../assets/filmes/mickey17.png') },
+  { id: 3, image: require('../../assets/filmes/interstellar.png') },
+  { id: 4, image: require('../../assets/filmes/materialista.png') },
+  { id: 5, image: require('../../assets/filmes/sinners.png') },
+  { id: 6, image: require('../../assets/filmes/darkNight.png') },
+  { id: 7, image: require('../../assets/filmes/homemComH.png') },
+  { id: 8, image: require('../../assets/filmes/inception.png') },
+  { id: 9, image: require('../../assets/filmes/RitaLee.png') },
+  { id: 10, image: require('../../assets/filmes/UltimaGota.png') },
+  { id: 11, image: require('../../assets/filmes/kpopHunters.png') },
+  { id: 12, image: require('../../assets/filmes/untilDawn.png') },
 ];
 
 
@@ -42,6 +42,14 @@ export default function LetterBox() {
         </TouchableOpacity>
       </View >
 
+      {/* teste */}
+      <View style={styles.searchContainer}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search"
+          placeholderTextColor="#aaa"
+        />
+      </View>
       <FlatList
         data={FILMS}
         keyExtractor={(item) => item.id.toString()}

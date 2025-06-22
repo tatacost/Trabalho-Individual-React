@@ -4,54 +4,75 @@ import { Header } from "react-native/Libraries/NewAppScreen";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#445565',
+    backgroundColor: '#2B3A4A',
   },
   Header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: '#2B3A4A',
   },
   title: {
     color: '#fff',
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   butonnBusca: {
-    backgroundColor: '#333',
     padding: 8,
     borderRadius: 20,
   },
   lupa: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: 22,
   },
   menus: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    paddingVertical: 8,
+    justifyContent: 'space-evenly',
+    paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: '#555',
+    borderBottomColor: '#3D4E60',
+    backgroundColor: '#2B3A4A',
   },
   text: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 15,
   },
   grid: {
-    padding: 8,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    paddingHorizontal: 8,
+    paddingTop: 8,
   },
   card: {
-    flex: 1,
-    margin: 4,
+    width: '31.5%',//Teste de espaçamento
     aspectRatio: 2 / 3,
     borderRadius: 8,
+    marginBottom: 8,
     overflow: 'hidden',
-    backgroundColor: '#333',
+    backgroundColor: '#444',
   },
   image: {
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
+  },
+  //teste
+  searchContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    backgroundColor: '#2B3A4A',
+  },
+  searchInput: {
+    height: 40,
+    borderColor: '#3D4E60',
+    borderWidth: 1,
+    borderRadius: 20,
+    paddingHorizontal: 16,
+    color: '#fff',
+    backgroundColor: '#2B3A4A',
   },
 
 });

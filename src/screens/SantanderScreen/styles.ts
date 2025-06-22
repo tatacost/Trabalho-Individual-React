@@ -76,9 +76,9 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonText: {
-    // fontSize: 16,
-    // color: '#aaa',
-    backgroundColor: '#eee',
+    fontSize: 16,
+    color: '#eee',
+    // backgroundColor: '#aaa',
     padding: 15,
     borderRadius: 30,
     alignItems: "center",
