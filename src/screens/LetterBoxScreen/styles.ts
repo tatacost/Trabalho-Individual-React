@@ -42,12 +42,13 @@ export const styles = StyleSheet.create({
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    gap: 8,
+    justifyContent: 'flex-start',
     paddingHorizontal: 8,
     paddingTop: 8,
   },
   card: {
-    width: '31.5%',//Teste de espaçamento
+    width: '33.2%',//Teste de espaçamento
     aspectRatio: 2 / 3,
     borderRadius: 8,
     marginBottom: 8,

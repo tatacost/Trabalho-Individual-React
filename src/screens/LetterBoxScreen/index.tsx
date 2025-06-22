@@ -50,20 +50,18 @@ export default function LetterBox() {
           placeholderTextColor="#aaa"
         />
       </View>
+
       <FlatList
         data={FILMS}
         keyExtractor={(item) => item.id.toString()}
         numColumns={3}
         contentContainerStyle={styles.grid}
         renderItem={({ item }) => (
-          <View style={styles.card}>
+          <TouchableOpacity style={styles.card}>
             <Image source={item.image} style={styles.image} />
-          </View>
+          </TouchableOpacity>
         )}
-
       />
-
-
 
 
     </View >
