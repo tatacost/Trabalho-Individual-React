@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 8,
     backgroundColor: '#2B3A4A',
+    marginTop: 8,
   },
   searchInput: {
     height: 40,

@@ -11,14 +11,23 @@ export const styles = StyleSheet.create({
     paddingVertical: 12,
     backgroundColor: '#2B3A4A',
   },
+  menuIcon: {
+    padding: 8,
+    marginRight: 8,
+  },
+  iconText: {
+    color: '#fff',
+    fontSize: 22,
+  },
   title: {
+    flex: 1,
     color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
   },
   butonBusca: {
     padding: 8,
-    borderRadius: 20,
+    // borderRadius: 20,
   },
   lupa: {
     color: '#fff',
@@ -26,7 +35,8 @@ export const styles = StyleSheet.create({
   },
   menus: {
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
+    paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
     borderBottomColor: '#3D4E60',
