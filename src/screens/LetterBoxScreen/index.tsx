@@ -1,6 +1,10 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, Image, TouchableOpacity, TextInput, FlatList } from 'react-native';
 import { styles } from './styles';
+import { SearchInput } from '../../components/SearchInput';
+import { HeaderLB } from '../../components/HeaderLB';
+
 
 const FILMS = [
   { id: 1, image: require('../../assets/filmes/liloStitch.png') },
@@ -17,45 +21,24 @@ const FILMS = [
   { id: 12, image: require('../../assets/filmes/untilDawn.png') },
 ];
 
+//cabecalho do FlatList
+const renderHeader = () => (
+  <>
+    <HeaderLB />
+    <SearchInput />
 
-
-
-
-
+  </>
+);
 export default function LetterBox() {
+
   return (
-
-    <View >
-      <View style={styles.Header}>
-        <Text style={styles.title}>Popular</Text>
-        <TouchableOpacity style={styles.butonnBusca} >
-          <Text style={styles.lupa}>🔎</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View >
-        <TouchableOpacity style={styles.menus}>
-          <Text style={styles.text}>FILMS</Text>
-          <Text style={styles.text}>REVIEWS</Text>
-          <Text style={styles.text}>LISTS</Text>
-          <Text style={styles.text}>JOURNAL</Text>
-        </TouchableOpacity>
-      </View >
-
-      {/* teste */}
-      <View style={styles.searchContainer}>
-        <TextInput
-          style={styles.searchInput}
-          placeholder="Search"
-          placeholderTextColor="#aaa"
-        />
-      </View>
-
+    <View style={styles.container}>
       <FlatList
         data={FILMS}
         keyExtractor={(item) => item.id.toString()}
         numColumns={3}
         contentContainerStyle={styles.grid}
+        ListHeaderComponent={renderHeader}
         renderItem={({ item }) => (
           <TouchableOpacity style={styles.card}>
             <Image source={item.image} style={styles.image} />
@@ -64,7 +47,7 @@ export default function LetterBox() {
       />
 
 
-    </View >
+    </View>
 
   );
 }

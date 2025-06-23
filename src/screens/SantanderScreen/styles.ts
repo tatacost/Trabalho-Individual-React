@@ -69,19 +69,5 @@ export const styles = StyleSheet.create({
     color: '#007bff',
     textDecorationLine: 'underline',
   },
-  button: {
-    backgroundColor: '#aaa',
-    padding: 15,
-    borderRadius: 30,
-    alignItems: 'center',
-  },
-  buttonText: {
-    fontSize: 16,
-    color: '#eee',
-    // backgroundColor: '#aaa',
-    padding: 15,
-    borderRadius: 30,
-    alignItems: "center",
-    marginTop: "auto"
-  },
+
 });

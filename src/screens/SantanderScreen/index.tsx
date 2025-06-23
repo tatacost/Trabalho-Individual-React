@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
+import { View, Text, Image, TouchableOpacity, TextInput, Button } from "react-native";
 import { styles } from "../SantanderScreen/styles";
 import Santanderlogo from "../../assets/SantanderLogo.png";
+import { ButtonBank } from "../../components/Button";
 
 
 export const Santander = () => {
@@ -31,9 +32,7 @@ export const Santander = () => {
         <Text style={styles.esqueceu}>Esqueceu sua senha?</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
+      <ButtonBank />
     </View>
   );
 }
