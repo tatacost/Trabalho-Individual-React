@@ -35,10 +35,10 @@ export default function LetterBox() {
     <View style={styles.container}>
       <FlatList
         data={FILMS}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item) => item.id.toString()}//chave unica
         numColumns={3}
-        contentContainerStyle={styles.grid}
-        ListHeaderComponent={renderHeader}
+        contentContainerStyle={styles.grid}//aplica espaçamento entre os cards
+        ListHeaderComponent={renderHeader}//aplica o header
         renderItem={({ item }) => (
           <TouchableOpacity style={styles.card}>
             <Image source={item.image} style={styles.image} />

@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   },
   card: {
     width: '33.2%',//Teste de espaçamento
-    aspectRatio: 2 / 3,
+    aspectRatio: 2 / 3,//largura altura
     borderRadius: 8,
     marginBottom: 8,
     overflow: 'hidden',
